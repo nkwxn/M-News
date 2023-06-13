@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorContainerView" customModule="M_News" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="XxG-QE-K7X"/>
+                <outlet property="errorDesc" destination="cL9-0D-haz" id="WQn-Uk-SBo"/>
+                <outlet property="errorTitle" destination="AjY-kC-OHO" id="e41-bR-0eE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="289"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="xmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="m1a-6g-BU3">
+                    <rect key="frame" x="16" y="59.999999999999986" width="246" height="139.66666666666669"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL9-0D-haz">
+                    <rect key="frame" x="16" y="237" width="246" height="18"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjY-kC-OHO">
+                    <rect key="frame" x="16" y="208" width="246" height="21"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="m1a-6g-BU3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="3as-Qv-D3P"/>
+                <constraint firstItem="cL9-0D-haz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="8sz-Zr-nhv"/>
+                <constraint firstAttribute="bottomMargin" secondItem="cL9-0D-haz" secondAttribute="bottom" id="9pN-SP-P49"/>
+                <constraint firstAttribute="trailingMargin" secondItem="cL9-0D-haz" secondAttribute="trailing" id="Bgm-Tb-xYJ"/>
+                <constraint firstItem="AjY-kC-OHO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="Jsn-OD-0yU"/>
+                <constraint firstItem="m1a-6g-BU3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="N6D-9E-BAw"/>
+                <constraint firstAttribute="trailingMargin" secondItem="m1a-6g-BU3" secondAttribute="trailing" id="UOo-3Z-Q4F"/>
+                <constraint firstAttribute="trailingMargin" secondItem="AjY-kC-OHO" secondAttribute="trailing" id="Zd5-kv-w59"/>
+                <constraint firstItem="cL9-0D-haz" firstAttribute="top" secondItem="AjY-kC-OHO" secondAttribute="bottom" constant="8" symbolic="YES" id="ffF-4h-AEm"/>
+                <constraint firstItem="AjY-kC-OHO" firstAttribute="top" secondItem="m1a-6g-BU3" secondAttribute="bottom" constant="8" symbolic="YES" id="yjV-7e-ZnJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="59.541984732824424" y="36.267605633802816"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

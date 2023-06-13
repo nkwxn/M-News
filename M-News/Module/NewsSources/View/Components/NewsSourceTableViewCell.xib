@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="KGk-i7-Jjw" customClass="NewsSourceTableViewCell" customModule="M_News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwM-Qi-OVd">
+                        <rect key="frame" x="20" y="11" width="341" height="24"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://url.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMz-Rc-QZF">
+                        <rect key="frame" x="20" y="35" width="341" height="14.333333333333336"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOb-I9-sgE">
+                        <rect key="frame" x="20" y="57.333333333333336" width="341" height="111.66666666666666"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uMz-Rc-QZF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="3kJ-qz-LQh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uMz-Rc-QZF" secondAttribute="trailing" id="7to-I0-diU"/>
+                    <constraint firstItem="LOb-I9-sgE" firstAttribute="top" secondItem="uMz-Rc-QZF" secondAttribute="bottom" constant="8" id="Ok7-7m-wyI"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="LOb-I9-sgE" secondAttribute="bottom" id="TN0-w5-A7Q"/>
+                    <constraint firstItem="dwM-Qi-OVd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ZxF-4B-kfu"/>
+                    <constraint firstItem="uMz-Rc-QZF" firstAttribute="top" secondItem="dwM-Qi-OVd" secondAttribute="bottom" id="ilz-Nw-BFq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="LOb-I9-sgE" secondAttribute="trailing" id="nr2-hb-FOf"/>
+                    <constraint firstItem="LOb-I9-sgE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ubf-p8-Y37"/>
+                    <constraint firstItem="dwM-Qi-OVd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="wzD-Bo-2y6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dwM-Qi-OVd" secondAttribute="trailing" id="xwH-J1-By7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descLabel" destination="LOb-I9-sgE" id="pdN-Lt-da1"/>
+                <outlet property="titleLabel" destination="dwM-Qi-OVd" id="20M-we-4x7"/>
+                <outlet property="urlLabel" destination="uMz-Rc-QZF" id="dRg-r1-O6K"/>
+            </connections>
+            <point key="canvasLocation" x="37.404580152671755" y="36.619718309859159"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
